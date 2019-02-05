@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.msgboard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 2rem 0 2rem;
+  list-style-type: none;
+}
+
+.post {
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.comments {
+  margin-top: 1rem;
+  list-style-type: none;
+}
+
+.comment {
+  text-align: right;
+  border-top: 1px solid rgb(77, 77, 77);
+}
+
+.comment-text {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .msgboard {
+    max-width: 70%;
+  }
+}

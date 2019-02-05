@@ -1,0 +1,46 @@
+.blogview-page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 2rem 0 0 0;
+}
+
+.blogview-imagebox {
+  width: 100%;
+}
+
+.blogview-image {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.blogview-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.blogview-title {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .blogview-page {
+    align-items: center;
+  }
+
+  .blogview-imagebox {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .blogview-image {
+    max-width: 60%;
+    object-fit: contain;
+  }
+
+  .blogview-body {
+    max-width: 60%;
+  }
+}

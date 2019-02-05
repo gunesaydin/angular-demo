@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  background-color: var(--third-color);
+}
+
+.navbar-mobile-header-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.navbar-logo {
+  margin-right: auto;
+  font-size: 1.7rem;
+  font-weight: 100;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.navbar-logo span {
+  color: var(--main-color);
+}
+
+.navbar-collapse-button {
+  margin-left: auto;
+  color: var(--secondary-color);
+  font-size: 2rem;
+  padding: 0.3rem 0.7rem 0 0; 
+}
+
+.navbar-nav {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* TODO: Rework transition with JS */
+.navbar-nav:hover, .navbar-mobile-header-top:hover + .navbar-nav {
+  max-height: 40rem;
+  height: auto;
+}
+
+
+.navbar-list {
+  list-style-type: none;
+  text-align: center;
+}
+
+.navbar-list-item a {
+  font-weight: 300;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navbar-list-item:hover a {
+  color: var(--main-color);
+}
+
+.navbar-list-item {
+  padding: 1rem 0 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .navbar-mobile-header-top {
+    display: flex;
+    margin-right: auto;
+  }
+
+  .navbar-logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+
+  .navbar-collapse-button {
+    display: none;
+  }
+
+  .navbar-nav {
+    max-height: 100%;
+  }
+  
+  .navbar-list {
+    display: flex;
+  }
+  
+  .navbar-list-item {
+    padding: 2rem 2rem 0 0;
+  }
+}

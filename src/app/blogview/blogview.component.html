@@ -1,0 +1,9 @@
+<div *ngIf="blog" class="blogview-page">
+  <div class="blogview-imagebox">
+    <img [src]="blog.image" class="blogview-image" alt="Image for blog post" />
+  </div>
+  <div class="blogview-body">
+    <h1 class="blogview-title">{{ blog.title }}</h1>
+    <p>{{ blog.body }}</p>
+  </div>
+</div>

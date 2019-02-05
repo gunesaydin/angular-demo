@@ -1,0 +1,19 @@
+<div class="container">
+  <ul *ngIf="posts" class="msgboard">
+    <li *ngFor="let post of posts" class="post" (click)="onClick(post.id)">
+      <h4>{{ post.title }}</h4>
+      <p>{{ post.body }}</p>
+      <ul *ngIf="post.comments" class="comments"
+        [ngClass]="{
+          'show': !post.hidden,
+          'hide': post.hidden
+      }">
+        <li *ngFor="let comment of post.comments" class="comment">
+          <small>{{ comment.email }}</small>
+          <h4>{{ comment.name }}</h4>
+          <p class="comment-text">{{ comment.body }}</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

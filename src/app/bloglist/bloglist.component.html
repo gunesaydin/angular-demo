@@ -1,0 +1,7 @@
+<ul *ngIf="blogs" class="blogs-list">
+  <li *ngFor="let blog of blogs" class="blogs-list-item" (click)="onClick(blog._id)">
+    <img [src]="blog.image" alt="Random image for blog post" />
+    <h2>{{ blog.title }}</h2>
+    <p>{{ blog.body }}</p>
+  </li>
+</ul>

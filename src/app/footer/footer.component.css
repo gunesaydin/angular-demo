@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: var(--third-color);
+  color: var(--footer-color);
+}
+
+.footer-text {
+  margin-top: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+
+.footer-links li {
+  font-size: 1.5rem;
+  padding: 0 1rem 0 1rem;
+}
+
+.footer-links li a {
+  color: var(--footer-color);
+}
+
+.footer-links li a:hover {
+  color: var(--main-color);
+}
